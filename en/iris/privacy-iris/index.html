@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#dce6dd">
+<meta name="description" content="Iris Ways privacy policy. Gaze estimation is processed on your device with ARKit. No camera image is recorded or sent.">
+<title>Iris Ways — Privacy Policy</title>
+
+<link rel="alternate" hreflang="fr" href="https://steve-s.net/iris/privacy-iris/">
+<link rel="alternate" hreflang="en" href="https://steve-s.net/en/iris/privacy-iris/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%232c5148'/%3E%3Cpath d='M11 27V13h9a5 5 0 010 10h-5' fill='none' stroke='%23f8f6e9' stroke-width='3'/%3E%3C/svg%3E">
+
+<style>
+:root{--ink:#29483f;--muted:#698077;--paper:#f7f7ec;--accent:#5a7f69;--rule:#54745633}
+*{box-sizing:border-box}
+body{margin:0;background:#dce6dd;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none;line-height:1.75}
+.wrap{max-width:720px;margin:0 auto;padding:calc(48px + env(safe-area-inset-top,0px)) 24px calc(64px + env(safe-area-inset-bottom,0px))}
+.brand{font-size:22px;font-weight:750;letter-spacing:-1.3px;display:inline-block;margin-bottom:34px}
+.brand>span:first-child{font-weight:350}
+.eyebrow{display:flex;align-items:center;gap:11px;font-size:9px;font-weight:550;letter-spacing:2.3px;color:var(--muted)}
+.tiny-line{height:1px;width:25px;background:#557566}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(38px,7vw,58px);line-height:1.08;letter-spacing:-2px;font-weight:400;margin:20px 0 10px}
+h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(22px,4vw,28px);font-weight:400;letter-spacing:-.8px;margin:44px 0 12px}
+p,li{font-size:15px;color:#3d5a50}
+.lead{font-family:Georgia,serif;font-size:clamp(18px,3vw,22px);line-height:1.5;color:var(--accent);margin:0 0 30px}
+ul{padding-left:20px}
+li{margin:7px 0}
+a{color:var(--accent)}
+.card{background:var(--paper);border:1px solid #fff;border-radius:18px;padding:22px 24px;margin:22px 0;box-shadow:0 10px 40px #243f3510}
+.foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 18px}
+.note{font-size:12px;color:var(--muted)}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<a class="brand" href="/">ProdX<span>0</span>x</a>
+
+<div class="eyebrow">
+<span class="tiny-line"></span>
+<span>PRIVACY</span>
+</div>
+
+<h1>Iris&nbsp;Ways privacy</h1>
+
+<p class="lead">
+Gaze estimation is processed on your device with ARKit. Camera images are not recorded or sent by Iris Ways.
+</p>
+
+<p>
+Iris Ways uses the front camera with ARKit face tracking to estimate where you are looking. Your gaze is used to control the spheres in the game.
+</p>
+
+<p>
+Iris Ways does not record camera images, video or raw face measurements, and does not send face or gaze data anywhere. Iris Ways contains no analytics service, no advertising tracker and no server of its own. Details are given in the Face Data (TrueDepth) section below.
+</p>
+
+<h2 id="face-data">Face Data (TrueDepth)</h2>
+
+<p>
+<strong>What Iris Ways uses.</strong> Iris Ways is played with your eyes. It uses the front camera through ARKit face tracking, Apple's technology built into iOS (on devices with Face ID, this is the TrueDepth camera). While the camera is active, Iris Ways uses the following face data provided by ARKit for each camera frame: the position and orientation of your head, the position of your eyes, the point your eyes are looking at as estimated by ARKit, and two values indicating whether each eye is blinking. With each frame, Iris Ways also uses technical information supplied by ARKit: whether a face is being tracked, the time of the frame and the orientation of the camera. Iris Ways does not use camera images, depth data, the 3D mesh of your face or any other facial expression values. Only one face is tracked.
+</p>
+
+<p>
+<strong>Why.</strong> This data is used for one purpose only: making the game work. Iris Ways works out where on the screen you are looking, and that gaze moves the spheres. Some levels also use your head movements. Blink values are used only during gaze setup and calibration, to set aside measurements taken while your eyes are closed.
+</p>
+
+<p>
+<strong>Processing on your device.</strong> All processing takes place on your device. Face data is held in the app's memory only while it is needed for the game or the calibration. Iris Ways does not record photos, video, camera images or raw face measurements, and keeps no history of your gaze. The camera is active only on the gaze setup and game screens, including the results screen shown at the end of a level. It stops when you leave these screens and pauses when Iris Ways goes to the background. The technical messages Iris Ways writes to the iOS system log may contain calibration summaries (accuracy values, screen size, axis orientation), but never images or raw face measurements.
+</p>
+
+<p>
+<strong>What is kept.</strong> Iris Ways keeps one item derived from gaze tracking: your calibration profile, saved in Iris Ways's local settings on your device. It contains a format version number; six correction coefficients that fit the gaze estimate to your screen; which camera directions correspond to the right and to the top of the screen; the screen orientation; the width and height of the play area; an estimate of the physical size of the screen and of the camera position; the date of the calibration; two accuracy measurements; and whether the calibration passed its accuracy check. It contains no image and no point, mesh or shape of your face. Iris Ways also stores your game progress (levels completed, best times, fewest intrusions, rewards earned, game elements already met, total play time) and your preferences. These are game results and settings, not face data.
+</p>
+
+<p>
+<strong>How long it is kept.</strong> Each calibration you complete and save replaces the previous profile. After 30 days, Iris Ways no longer uses a profile, but the profile remains stored on your device until a new calibration is saved or the app is deleted. Like all local app data, it may be included in the device backups (iCloud or computer) that you make with iOS. Iris Ways has no access to these backups.
+</p>
+
+<p>
+<strong>No transmission, no third parties.</strong> Iris Ways does not send face data, gaze data or the calibration profile anywhere: not to us and not to anyone else. This data is not shared, disclosed or sold. Iris Ways contains no analytics, advertising or tracking service and no third-party SDK. The only network communication in Iris Ways is made by Apple's StoreKit with the App Store for purchases, and it contains no face data.
+</p>
+
+<p>
+<strong>No other use.</strong> Iris Ways never uses face data for advertising, marketing, analytics, authentication, identifying a person or building a user profile.
+</p>
+
+<p>
+<strong>Your consent, and how to withdraw it.</strong> Iris Ways uses the camera only after you allow it in the iOS permission request, shown before your first game. You can withdraw this permission at any time in the iOS Settings app, under Iris Ways › Camera. Iris Ways can then no longer use the camera, and the game cannot be played. In Iris Ways, Settings › Recalibrate Gaze lets you redo the calibration.
+</p>
+
+<p>
+<strong>Deletion.</strong> To erase the calibration profile and all Iris Ways data from your device, delete the app: iOS then erases its local data. Copies already contained in an iOS backup are not erased when you delete the app; they remain for as long as that backup is kept. "Reset Progress" in Iris Ways erases your progress but not the calibration profile. Because nothing is transmitted to us, we hold no face data about you to delete.
+</p>
+
+<h2>What stays on your device</h2>
+
+<ul>
+<li>your gaze calibration profile (described in Face Data (TrueDepth) above);</li>
+<li>your progress through the chapters;</li>
+<li>your preferences for sound, ambience, vibration and the gaze marker;</li>
+<li>a local flag recording that the introductory explanation has already been viewed.</li>
+</ul>
+
+<p>
+This information is stored locally on your device. Iris Ways does not associate it with an Iris Ways account, advertising identifier or user profile, and it is not transmitted to us. Like all local app data, it may be included in the device backups you make with iOS.
+</p>
+
+<h2>Purchases</h2>
+
+<p>
+Purchases and promotional access are handled by the App Store and StoreKit. Iris Ways does not receive your Apple Account credentials or payment information.
+</p>
+
+<p>
+Iris Ways receives only the StoreKit entitlement information needed to determine whether Full Game access or temporary promotional access is currently available.
+</p>
+
+<h2>No Iris Ways account</h2>
+
+<p>
+No Iris Ways account is required to play. Iris Ways does not provide its own sign-in system.
+</p>
+
+<p>
+The App Store may request Apple authentication when you make or restore a purchase, or when you redeem an Apple Offer Code. That authentication is handled by Apple, not by Iris Ways.
+</p>
+
+<h2>Data collection</h2>
+
+<p>
+Iris Ways does not transmit personal data, gameplay analytics, advertising data, camera images, face data or gaze data to us.
+</p>
+
+<p>
+Accordingly, Iris Ways is declared in App Store privacy information as collecting no data and performing no tracking.
+</p>
+
+<div class="card">
+<h2 style="margin-top:0">Contact</h2>
+<p>Iris Ways is published by Stéphane SAULNIER, who is responsible for this privacy policy.</p>
+<p>
+<a href="mailto:contact@steve-s.net">contact@steve-s.net</a>
+</p>
+</div>
+
+<p class="note">Last updated: 16 October 2026.</p>
+
+<div class="foot">
+<span>Iris Ways &mdash; made by ProdX0x</span>
+<a href="/en/iris/">Support</a>
+<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+<a href="/iris/privacy-iris/">Français</a>
+<a href="/">All creations</a>
+</div>
+
+</div>
+</body>
+</html>

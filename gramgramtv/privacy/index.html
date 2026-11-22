@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#dce6dd">
+<meta name="description" content="Politique de confidentialité de GramGramTV 1.1 pour Apple TV : ce qui part vers Telegram, TMDB, YouTube et Apple, et ce que le développeur reçoit (rien par l&#x27;app).">
+<title>GramGramTV — politique de confidentialité</title>
+<link rel="canonical" href="https://steve-s.net/gramgramtv/privacy-ggtv/">
+<link rel="alternate" hreflang="fr" href="https://steve-s.net/gramgramtv/privacy-ggtv/">
+<link rel="alternate" hreflang="en" href="https://steve-s.net/en/gramgramtv/privacy-ggtv/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%232c5148'/%3E%3Cpath d='M11 27V13h9a5 5 0 010 10h-5' fill='none' stroke='%23f8f6e9' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+:root{--ink:#29483f;--muted:#698077;--paper:#f7f7ec;--accent:#5a7f69;--rule:#54745633}
+*{box-sizing:border-box}
+body{margin:0;background:#dce6dd;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none;line-height:1.75}
+.wrap{max-width:760px;margin:0 auto;padding:calc(48px + env(safe-area-inset-top,0px)) 24px calc(64px + env(safe-area-inset-bottom,0px))}
+.brand{font-size:22px;font-weight:750;letter-spacing:-1.3px;display:inline-block;margin-bottom:34px;color:var(--ink);text-decoration:none}
+.brand>span:first-child{font-weight:350}
+.eyebrow{display:flex;align-items:center;gap:11px;font-size:9px;font-weight:550;letter-spacing:2.3px;color:var(--muted)}
+.tiny-line{height:1px;width:25px;background:#557566}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,7vw,52px);line-height:1.08;letter-spacing:-2px;font-weight:400;margin:20px 0 10px;overflow-wrap:anywhere}
+h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(22px,4vw,28px);font-weight:400;letter-spacing:-.8px;margin:52px 0 12px;scroll-margin-top:16px}
+h3{font-size:17px;font-weight:650;margin:34px 0 8px;scroll-margin-top:16px}
+p,li{font-size:15px;color:#3d5a50}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+a{color:var(--accent);overflow-wrap:anywhere}
+.card{background:var(--paper);border:1px solid #fff;border-radius:18px;padding:22px 24px;margin:22px 0;box-shadow:0 10px 40px #243f3510}
+.card h2{margin-top:0}
+.card ul{margin:0}
+.toc ol{margin:6px 0 0}
+.toc a{text-decoration:none}
+.table-wrap{overflow-x:auto;margin:18px 0;border-radius:14px;border:1px solid var(--rule);background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:13px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule);color:#3d5a50}
+th{font-weight:650;color:var(--ink)}
+tr:last-child td{border-bottom:0}
+mark{background:#f3e3a0;color:var(--ink);padding:0 4px;border-radius:4px}
+.foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 18px}
+.note{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="brand" href="/">ProdX<span>0</span>x</a>
+<div class="eyebrow"><span class="tiny-line"></span><span>CONFIDENTIALITÉ</span></div>
+<h1>Politique de confidentialité</h1>
+<p class="note">GramGramTV 1.1 pour Apple TV · Dernière mise à jour&nbsp;: 19 novembre 2026 · <a href="/en/gramgramtv/privacy-ggtv/" hreflang="en" lang="en">English version</a></p>
+
+<div class="card"><h2 id="en-bref">En bref</h2>
+<ul><li><strong>Le développeur ne reçoit rien de l'app.</strong> GramGramTV n'a pas de serveur : ni vos messages, ni vos recherches, ni vos fichiers, ni aucune statistique ne lui sont envoyés.</li><li><strong>Vos conversations passent directement entre votre Apple TV et Telegram</strong>, par la bibliothèque officielle de Telegram (TDLib).</li><li><strong>TMDB reçoit le texte des légendes de vos vidéos.</strong> Pour afficher l'affiche d'un film, l'app envoie à TMDB (The Movie Database, États-Unis) la légende de chaque vidéo affichée, <strong>y compris dans vos conversations privées</strong>, avec l'adresse IP de votre Apple TV. La version 1.1 n'a aucun réglage pour l'éviter (partie 3.2).</li><li><strong>YouTube (Google) reçoit l'identifiant des vidéos YouTube</strong> dont le lien apparaît dans un message, pour en afficher la miniature.</li><li>Aucune publicité, aucun outil de mesure d'audience, aucun pistage dans l'app. Le développeur ne vend aucune donnée.</li></ul>
+</div>
+<nav class="card toc" aria-label="Sommaire"><h2>Sommaire</h2>
+<ol><li><a href="#partie-1">Qui est responsable, et comment le joindre</a></li><li><a href="#partie-2">Ce que fait l'app, et ce que le développeur reçoit</a></li><li><a href="#partie-3">Ce qui quitte votre Apple TV, destinataire par destinataire</a></li><li><a href="#partie-4">Tableau récapitulatif</a></li><li><a href="#partie-5">Ce qui reste sur votre Apple TV, et comment l'effacer</a></li><li><a href="#partie-6">Le mode démo</a></li><li><a href="#partie-7">Vos droits</a></li><li><a href="#partie-8">Âge minimum</a></li><li><a href="#partie-9">Cette page web</a></li><li><a href="#partie-10">Modifications de cette politique</a></li></ol>
+</nav>
+<h2 id="partie-1">1. Qui est responsable, et comment le joindre</h2>
+<p>GramGramTV est développée et publiée par <strong>Stéphane Saulnier (ProdX0x)</strong>, en France, appelé ici « le développeur ». Il est responsable de ce que l'app fait de vos données.</p>
+<ul><li>Courriel : <strong><a href="mailto:contact@steve-s.net">contact@steve-s.net</a></strong></li></ul>
+<p>GramGramTV est un client Telegram non officiel : elle utilise l'API de Telegram, mais elle n'est ni éditée ni approuvée par Telegram.</p>
+<h2 id="partie-2">2. Ce que fait l'app, et ce que le développeur reçoit</h2>
+<p>GramGramTV affiche sur votre téléviseur les conversations, groupes et chaînes de <strong>votre</strong> compte Telegram : messages, photos, vidéos, sons et documents PDF. Elle peut lire les PDF à voix haute. Elle ne publie rien : elle n'envoie ni message, ni réaction, ni fichier.</p>
+<p><strong>Le développeur ne reçoit rien de l'app.</strong> Elle n'a ni serveur, ni outil de mesure d'audience, ni publicité. Vos données ne passent jamais par le développeur.</p>
+<p>Il ne reçoit des informations que dans deux cas, en dehors de l'app :</p>
+<ul><li><strong>Vous lui écrivez.</strong> Il reçoit votre adresse et votre message. Il s'en sert uniquement pour vous répondre (base légale : son intérêt légitime à traiter votre demande, RGPD art. 6, 1, f) et les supprime au plus tard 12 mois après votre dernier échange.</li><li><strong>Vous avez accepté de partager des données d'analyse avec les développeurs</strong> dans les réglages de votre Apple TV. Apple peut alors lui transmettre des rapports de plantage et des statistiques d'utilisation, agrégés ou sous une forme qui ne vous identifie pas (partie 3.5).</li></ul>
+<h2 id="partie-3">3. Ce qui quitte votre Apple TV, destinataire par destinataire</h2>
+<p>Les sociétés ci-dessous traitent ce qu'elles reçoivent selon leurs propres politiques de confidentialité, qui s'appliquent en plus de celle-ci. Le développeur ne les contrôle pas. Pour ce qu'elles gardent, adressez-vous à elles : leurs liens sont donnés dans chaque partie.</p>
+<h3 id="partie-3-1">3.1 Telegram</h3>
+<p><strong>Qui.</strong> Telegram Messenger Inc. (« Telegram »), établie hors de l'Espace économique européen. L'app utilise TDLib, la bibliothèque officielle de Telegram, intégrée à l'app.</p>
+<p><strong>Ce qui part, et quand.</strong></p>
+<ul><li><strong>Dès l'ouverture de l'app</strong>, même si vous ne vous connectez pas, et aussi en mode démo : une connexion aux serveurs de Telegram avec le type d'appareil, la version de tvOS, la version de l'app et la langue de l'Apple TV, puis une demande de QR code de connexion.</li><li><strong>À la connexion</strong> : vous scannez le QR code avec Telegram sur votre téléphone. Telegram ouvre alors une <strong>session</strong> liée à votre compte. Vous ne tapez pas votre numéro de téléphone dans l'app.</li><li><strong>Si votre compte a un mot de passe</strong> (validation en deux étapes) : vous le tapez sur l'Apple TV. Il est vérifié selon le protocole de Telegram (SRP) : l'app envoie une preuve calculée à partir du mot de passe, pas le mot de passe lui-même, et elle ne le garde pas.</li><li><strong>En naviguant</strong> : les demandes nécessaires pour afficher vos discussions, vos messages, les noms et photos des expéditeurs, et pour télécharger les photos, vidéos et fichiers que vous ouvrez.</li><li><strong>Quand vous lancez une recherche</strong> : le texte tapé ou dicté.</li><li><strong>À la déconnexion</strong> : la demande de fermeture de la session.</li><li>Comme toute connexion à internet, ces échanges portent l'<strong>adresse IP</strong> de votre Apple TV.</li></ul>
+<p><strong>Pourquoi, et sur quelle base.</strong> Vous donner accès à votre compte Telegram sur la télévision, ce que vous demandez en utilisant l'app. Base légale : l'exécution du contrat d'utilisation de l'app (RGPD art. 6, 1, b). Telegram traite ensuite ces données pour son propre compte, notamment au titre de ses intérêts légitimes, dont la sécurité et la lutte contre les abus, selon sa politique.</p>
+<p><strong>Ce que Telegram garde.</strong></p>
+<ul><li><strong>La session</strong> : elle figure dans la liste des appareils connectés de votre compte Telegram, avec le modèle d'appareil, les versions, la date de dernière activité, la dernière adresse IP connue, et le pays et la région que Telegram en déduit. Elle y reste tant qu'elle n'est pas fermée.</li><li><strong>Des métadonnées de sécurité</strong>, comme l'adresse IP et les appareils utilisés : « 12 mois maximum », selon Telegram.</li><li><strong>Vos recherches</strong> : la politique de Telegram ne dit pas si elles sont gardées.</li><li><strong>Vos messages et fichiers</strong> restent dans le nuage de Telegram, comme avec toute app Telegram. GramGramTV n'y ajoute rien.</li><li>Telegram indique pouvoir se servir de l'adresse IP pour adapter ses publicités au pays et à la ville. GramGramTV 1.1 n'affiche aucune publicité de Telegram.</li></ul>
+<p><strong>Où.</strong> Selon Telegram, les données des comptes ouverts depuis l'Espace économique européen sont stockées dans des centres de données aux Pays-Bas. Elles peuvent être partagées avec des sociétés de son groupe situées aux îles Vierges britanniques et à Dubaï, sous des clauses contractuelles types approuvées par la Commission européenne. Telegram a désigné EDPO (European Data Protection Office) comme représentant dans l'Union.</p>
+<p><strong>En savoir plus, et exercer vos droits chez Telegram :</strong> <a href="https://telegram.org/privacy">https://telegram.org/privacy</a></p>
+<h3 id="partie-3-2">3.2 TMDB (The Movie Database)</h3>
+<p><strong>Qui.</strong> TMDB, exploitée par TiVo Platform Technologies LLC, du groupe Xperi, dont l'adresse est à San José, en Californie (États-Unis).</p>
+<p><strong>Ce qui part.</strong></p>
+<ul><li><strong>Le texte de la légende de chaque vidéo affichée.</strong> L'app retire l'extension du fichier, des mentions techniques (comme « 1080p » ou « VOSTFR ») et tout ce qui suit une année, puis envoie le reste s'il compte au moins deux caractères, avec l'année trouvée.</li><li>Dans la grille d'une chaîne, <strong>le nom de la chaîne</strong>, quand la vidéo n'a pas de légende.</li><li>La langue « français » et la clé d'accès TMDB du développeur, la même pour tous les utilisateurs.</li><li>L'<strong>adresse IP</strong> de votre Apple TV, comme pour toute connexion.</li><li>Si TMDB trouve un film, l'app télécharge son affiche depuis les serveurs d'images de TMDB, avec la même adresse IP.</li></ul>
+<p>L'app n'ajoute aucun identifiant Telegram : ni numéro, ni nom de compte. Mais une légende peut contenir n'importe quel texte, comme un prénom ou un lieu, et avoir été écrite par quelqu'un d'autre que vous.</p>
+<p><strong>Quand.</strong> Automatiquement, <strong>dès qu'une vidéo s'affiche à l'écran</strong>, sans que vous l'ouvriez : dans une conversation, <strong>privée comprise</strong>, un groupe, une chaîne ou les résultats d'une recherche. Une seule fois par texte tant que l'app reste ouverte.</p>
+<p><strong>Pourquoi, et sur quelle base.</strong> Montrer l'affiche du film quand la légende en donne le titre. Base légale : l'intérêt légitime du développeur à illustrer les vidéos (RGPD art. 6, 1, f). Vous pouvez vous y opposer (partie 7).</p>
+<p><strong>Comment l'éviter.</strong></p>
+<ul><li><strong>La version 1.1 n'a aucun réglage qui coupe cet envoi.</strong> Le réglage « Privacy Shield » masque des aperçus à l'écran, mais il ne l'empêche pas.</li><li>Le seul moyen est de ne pas afficher de vidéo dans l'app, ou de ne pas utiliser l'app, jusqu'à la prochaine version.</li><li>La version en préparation n'envoie plus rien à TMDB. Cette page sera mise à jour le jour de sa sortie.</li></ul>
+<p><strong>Ce que TMDB garde.</strong> Sa politique indique qu'elle peut recueillir l'adresse IP, les informations d'URL (l'adresse appelée contient le texte cherché) et des informations liées aux recherches, notamment pour analyser l'usage de ses services. Elle cite aussi, parmi ce qu'elle peut recueillir, une localisation générale déduite des adresses IP. Elle garde ces informations aussi longtemps que nécessaire à ses besoins, sans durée précise.</p>
+<p><strong>Où.</strong> TMDB indique que des données recueillies dans l'Espace économique européen peuvent être traitées hors de cet espace, notamment aux États-Unis. Sa politique ne cite pas de garantie particulière pour ces transferts. Le développeur utilise TMDB selon ses conditions d'utilisation standard, sans clauses propres à ce transfert.</p>
+<p><strong>En savoir plus, et exercer vos droits chez TMDB :</strong> <a href="https://www.themoviedb.org/privacy-policy">https://www.themoviedb.org/privacy-policy</a> · <a href="mailto:privacyrequest@xperi.com">privacyrequest@xperi.com</a></p>
+<p>GramGramTV utilise TMDB et les API de TMDB, mais n'est ni approuvée, ni certifiée, ni autrement validée par TMDB.</p>
+<h3 id="partie-3-3">3.3 YouTube (Google)</h3>
+<p><strong>Ce qui part, et quand.</strong> Quand un message d'une conversation contient un lien YouTube, l'app affiche la miniature de la vidéo en la chargeant depuis les serveurs de YouTube, <strong>dès que le message s'affiche</strong>. Google reçoit alors l'identifiant de la vidéo et l'adresse IP de votre Apple TV.</p>
+<p><strong>Pourquoi, et sur quelle base.</strong> Montrer un aperçu du lien. Base légale : l'intérêt légitime du développeur à rendre les liens reconnaissables (RGPD art. 6, 1, f).</p>
+<p><strong>Comment l'éviter.</strong> Aucun réglage de la version 1.1 ne coupe ce chargement. Le réglage « Demander avant d'ouvrir YouTube » ne concerne que l'ouverture de la vidéo.</p>
+<p><strong>Ensuite.</strong> Si vous choisissez « Regarder sur YouTube », l'app ouvre l'app YouTube : ce qui s'y passe relève de YouTube.</p>
+<p><strong>Qui, où, combien de temps.</strong> Pour les utilisateurs de l'Espace économique européen et de la Suisse, le responsable est Google Ireland Limited. Google indique pouvoir traiter les données sur des serveurs situés hors de votre pays. Durées : selon la politique de Google, <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h3 id="partie-3-4">3.4 Services techniques de secours</h3>
+<p>Si les serveurs de Telegram sont injoignables, la bibliothèque de Telegram (TDLib) peut interroger des services techniques pour retrouver leur adresse : Google (DNS public et Firebase), Cloudflare et Microsoft Azure. Ces services voient l'adresse IP de votre Apple TV, mais ne reçoivent aucune donnée de votre compte.</p>
+<h3 id="partie-3-5">3.5 Apple</h3>
+<ul><li><strong>App Store</strong> : le téléchargement et les mises à jour de l'app passent par Apple, selon sa politique : <a href="https://www.apple.com/fr/legal/privacy/">https://www.apple.com/fr/legal/privacy/</a></li><li><strong>Dictée</strong> : si vous dictez dans un champ de texte avec la télécommande, c'est tvOS qui capte et transcrit votre voix ; l'app ne reçoit que le texte. Selon Apple, ce que vous dites est traité sur l'appareil ou envoyé à Apple selon vos réglages. L'audio n'est pas gardé par Apple, sauf si vous avez accepté « Améliorer Siri et Dictée ». L'historique des requêtes, lié à un identifiant aléatoire, peut être gardé jusqu'à deux ans. <a href="https://www.apple.com/legal/privacy/data/fr/ask-siri-dictation/">https://www.apple.com/legal/privacy/data/fr/ask-siri-dictation/</a></li><li><strong>Lecture à voix haute des PDF</strong> : la reconnaissance du texte, la détection de la langue et la voix sont faites par des fonctions intégrées à tvOS. GramGramTV n'envoie ce texte à personne.</li><li><strong>Données d'analyse</strong> : si vous avez activé « Partager avec les développeurs d'apps », Apple peut transmettre au développeur des données de plantage et des statistiques d'utilisation, agrégées ou sous une forme qui ne vous identifie pas. Vous pouvez désactiver ce partage dans les réglages de confidentialité de l'Apple TV. <a href="https://www.apple.com/legal/privacy/data/fr/app-analytics/">https://www.apple.com/legal/privacy/data/fr/app-analytics/</a></li></ul>
+<p>Apple est responsable de ces traitements, pas le développeur.</p>
+<h2 id="partie-4">4. Tableau récapitulatif</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Destinataire</th><th scope="col">Ce qu'il reçoit</th><th scope="col">Quand</th><th scope="col">Pourquoi</th><th scope="col">Base légale</th><th scope="col">Durée connue</th><th scope="col">Hors de l'UE</th></tr></thead><tbody><tr><td>Telegram</td><td>Session (appareil, versions, langue, adresse IP) ; demandes de contenus ; recherches</td><td>À l'ouverture de l'app, en naviguant, en cherchant</td><td>Accès à votre compte</td><td>Contrat (art. 6, 1, b)</td><td>Session : tant qu'elle n'est pas fermée. Métadonnées : 12 mois maximum. Recherches : non précisé</td><td>Groupe établi hors de l'UE ; données de l'EEE stockées aux Pays-Bas ; clauses types</td></tr><tr><td>TMDB</td><td>Légendes des vidéos affichées, privées comprises, ou nom de la chaîne ; adresse IP</td><td>À l'affichage d'une vidéo</td><td>Trouver une affiche</td><td>Intérêt légitime (art. 6, 1, f)</td><td>Aucune durée précise</td><td>États-Unis ; aucune garantie citée</td></tr><tr><td>Google (YouTube)</td><td>Identifiant de la vidéo ; adresse IP</td><td>À l'affichage d'un lien YouTube</td><td>Miniature</td><td>Intérêt légitime (art. 6, 1, f)</td><td>Selon Google</td><td>Serveurs dans le monde</td></tr><tr><td>Google, Cloudflare, Microsoft</td><td>Adresse IP</td><td>Seulement si Telegram est injoignable</td><td>Joindre Telegram</td><td>Contrat (art. 6, 1, b)</td><td>Non connue</td><td>Non connu</td></tr><tr><td>Apple</td><td>Dictée ; statistiques si vous l'acceptez</td><td>Selon vos réglages</td><td>Services d'Apple</td><td>Apple en est responsable</td><td>Dictée : jusqu'à 2 ans (identifiant aléatoire)</td><td>Selon Apple</td></tr><tr><td>Le développeur</td><td>Rien par l'app ; vos courriels</td><td>Si vous écrivez</td><td>Vous répondre</td><td>Intérêt légitime (art. 6, 1, f)</td><td>12 mois après le dernier échange</td><td>—</td></tr></tbody></table></div>
+<h2 id="partie-5">5. Ce qui reste sur votre Apple TV, et comment l'effacer</h2>
+<p><strong>Ce que l'app garde sur l'Apple TV</strong>, dans l'espace réservé à l'app :</p>
+<ul><li>la <strong>base de données de Telegram</strong> : votre session et une copie de vos discussions et messages, pour les afficher rapidement ;</li><li>les <strong>photos, vidéos et fichiers téléchargés</strong> ;</li><li>l'historique <strong>« Reprendre la lecture »</strong> : pour les 20 dernières vidéos ou PDF, le titre, une petite vignette et l'endroit où vous vous êtes arrêté ;</li><li>vos <strong>réglages</strong> (Privacy Shield, confirmation avant YouTube) et la dernière rubrique ouverte ;</li><li>pendant que l'app est ouverte seulement, des images en mémoire (affiches, vignettes).</li></ul>
+<p>L'app ne garde pas l'historique de vos recherches.</p>
+<p><strong>Bon à savoir.</strong></p>
+<ul><li>L'app n'a pas de code de verrouillage : toute personne qui utilise votre Apple TV peut ouvrir vos conversations tant que vous restez connecté.</li><li>Le réglage « Privacy Shield » remplace le texte d'aperçu des messages par « Aperçu masqué » et cache ou floute les vignettes des médias, dans les listes et sur l'accueil. Il ne masque pas les noms des conversations, les légendes des médias, ni le contenu d'une conversation ouverte.</li></ul>
+<p><strong>Comment l'effacer.</strong></p>
+<ul><li><strong>Se déconnecter</strong> : dans l'app, Réglages › Compte Telegram › « Se déconnecter » (une connexion à internet est nécessaire). La session est fermée chez Telegram et, selon la documentation de TDLib, toutes ses données locales sont détruites. <strong>L'historique « Reprendre la lecture » et vos réglages restent</strong> sur l'Apple TV.</li><li><strong>Supprimer l'app</strong> : dans les Réglages de l'Apple TV, Général › Gérer le stockage, puis « Supprimer » à côté de GramGramTV. L'app et toutes ses données sont effacées. Ne choisissez pas « Décharger » : l'app est retirée mais ses données sont gardées. L'option « Décharger les apps inutilisées » garde elle aussi les données.</li><li><strong>Fermer la session depuis votre téléphone</strong>, par exemple si vous n'avez plus accès à l'Apple TV : dans Telegram, ouvrez la liste des appareils connectés (en anglais : Settings › Devices, ou Privacy &amp; Security › Active Sessions) et mettez fin à la session de l'Apple TV. Pour effacer aussi ce qui reste sur l'Apple TV, supprimez l'app.</li><li><strong>Supprimer votre compte Telegram</strong> : <a href="https://telegram.org/deactivate">https://telegram.org/deactivate</a>. Selon Telegram, cela supprime vos messages, médias et contacts de son nuage, sans retour possible.</li></ul>
+<h2 id="partie-6">6. Le mode démo</h2>
+<p>Le mode démo, accessible depuis l'écran de connexion, montre des contenus fictifs, sans compte Telegram. Même en démo :</p>
+<ul><li>l'app se connecte à Telegram à l'ouverture (partie 3.1) ;</li><li>elle envoie à TMDB les titres fictifs des vidéos de démonstration (« Démo · … ») ;</li><li>elle charge depuis YouTube la miniature d'une vraie vidéo YouTube citée dans une conversation fictive.</li></ul>
+<p>Une page de la démonstration dit qu'« aucune donnée ne quitte l'appareil » : c'est inexact pour la version 1.1. Cette phrase sera corrigée dans la prochaine version.</p>
+<h2 id="partie-7">7. Vos droits</h2>
+<p>Selon le RGPD, vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation de leur traitement et leur portabilité. Vous pouvez aussi <strong>vous opposer</strong>, pour des raisons tenant à votre situation particulière, aux traitements fondés sur l'intérêt légitime : envoi des légendes à TMDB, chargement des miniatures YouTube, conservation de vos courriels.</p>
+<p><strong>Concrètement.</strong></p>
+<ul><li><strong>Le développeur ne détient aucune donnée venant de l'app.</strong> Il ne peut donc ni vous en remettre une copie, ni en effacer chez Telegram, TMDB, Google ou Apple. Il répond à vos questions et traite les demandes qui concernent vos courriels, à l'adresse <a href="mailto:contact@steve-s.net">contact@steve-s.net</a>, dans un délai d'un mois, prolongeable de deux mois si la demande est complexe.</li><li><strong>Pour ce que gardent Telegram, TMDB, Google ou Apple</strong>, adressez-vous à eux (liens en partie 3).</li><li><strong>Sur l'Apple TV</strong>, vous effacez vous-même les données (partie 5).</li><li><strong>Vous opposer à l'envoi vers TMDB ou YouTube</strong> : la version 1.1 ne permet pas de le couper, et écrire au développeur ne l'arrête pas sur votre Apple TV. Le seul moyen immédiat est de ne pas afficher de vidéo ni de lien YouTube, ou de ne pas utiliser l'app, jusqu'à la prochaine version.</li><li>Le développeur ne prend aucune décision automatisée à votre sujet et ne fait pas de profilage.</li><li>Vous n'êtes pas obligé de fournir des données. Sans compte Telegram, seul le mode démo est utilisable.</li><li>Le développeur traite de la même façon les demandes venant de tous les pays où l'app est proposée.</li></ul>
+<p><strong>Réclamation.</strong> Vous pouvez introduire une réclamation auprès d'une autorité de protection des données, en particulier dans le pays où vous vivez, où vous travaillez ou où le problème a eu lieu. En France : la CNIL, <a href="https://www.cnil.fr/fr/plaintes">https://www.cnil.fr/fr/plaintes</a></p>
+<h2 id="partie-8">8. Âge minimum</h2>
+<p>GramGramTV demande un compte Telegram, sauf en mode démo. Les conditions d'utilisation de Telegram fixent un âge minimum, 18 ans pour les utilisateurs des pays de l'Union européenne : <a href="https://telegram.org/tos">https://telegram.org/tos</a>. Le développeur ne reçoit aucune donnée de l'app, y compris d'un mineur.</p>
+<h2 id="partie-9">9. Cette page web</h2>
+<p>Cette page est hébergée par GitHub Pages (GitHub, Inc.). Selon GitHub, l'adresse IP des visiteurs est enregistrée pour des raisons de sécurité. La page n'utilise ni cookie, ni mesure d'audience, ni contenu chargé depuis un autre site.</p>
+<h2 id="partie-10">10. Modifications de cette politique</h2>
+<p>Cette politique décrit la version 1.1 de GramGramTV pour Apple TV, en vente depuis le 6 septembre 2026. Elle est mise à jour dès que l'app change ce qu'elle envoie, au plus tard le jour de la sortie d'une nouvelle version ; la date en haut de page change alors. La version précédente de cette page datait du 31 août 2026.</p>
+
+<div class="foot">
+<span>GramGramTV · © 2026 Stéphane Saulnier / ProdX0x</span>
+<a href="/gramgramtv/">Présentation et assistance</a>
+<a href="/en/gramgramtv/privacy-ggtv/" hreflang="en" lang="en">English</a>
+<a href="/">Toutes les créations</a>
+</div>
+</div>
+</body>
+</html>
